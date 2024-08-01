@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            
+    
+        }
+        .options {
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .options input[type="radio"] {
+            margin-right: 5px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+
+        .timer {
+            font-size: 24px;
+            color: red;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Aptitude Test</h1>
+       
+        
+        
+
+        
+        <form id="testForm">
+            <div class="question">
+                <p>1. What is the chemical symbol for gold?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> Go</label>
+                    <label><input type="radio" name="q1" value="b"> Au</label>
+                    <label><input type="radio" name="q1" value="c"> Ag</label>
+                    <label><input type="radio" name="q1" value="d"> Gd</label>
+                </div>
+                <p>2. Which of the following is not a greenhouse gas? </p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> Carbon dioxide
+                    </label>
+                    <label><input type="radio" name="q2" value="b"> Methane
+                    </label>
+                    <label><input type="radio" name="q2" value="c">Oxygen
+                    </label>
+                    <label><input type="radio" name="q2" value="d"> Water vapor
+                    </label>
+                </div>
+                <p>3. Which planet is known as the "Red Planet"?
+                </p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> Venus</label>
+                    <label><input type="radio" name="q3" value="b"> Mars</label>
+                    <label><input type="radio" name="q3" value="c"> Jupiter</label>
+                    <label><input type="radio" name="q3" value="d">Saturn </label>
+                </div>
+                <p>4. What is the process by which plants make their own food called?
+                </p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a">  Respiration
+                    </label>
+                    <label><input type="radio" name="q4" value="b"> Photosynthesis
+                    </label>
+                    <label><input type="radio" name="q4" value="c">Fermentation
+                    </label>
+                    <label><input type="radio" name="q4" value="d">  Transpiration
+                    </label>
+                </div>
+                <p>5.Which subatomic particle has a positive charge?
+                </p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a">Neutron
+                    </label>
+                    <label><input type="radio" name="q5" value="b">  Proton
+                    </label>
+                    <label><input type="radio" name="q5" value="c"> Electron
+                    </label>
+                    <label><input type="radio" name="q5" value="d">Positron
+                    </label>
+                </div>
+                <p>6. What is the primary purpose of accounting?
+                </p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> Managing human resources
+                    </label>
+                    <label><input type="radio" name="q6" value="b"> Tracking and recording financial transactions
+                    </label>
+                    <label><input type="radio" name="q6" value="c">Advertising products
+                    </label>
+                    <label><input type="radio" name="q6" value="d"> Designing marketing campaigns
+                    </label>
+                </div>
+                <p>7. Which document serves as evidence of a transaction between a buyer and a seller?
+                </p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a"> Invoice
+                    </label>
+                    <label><input type="radio" name="q7" value="b"> Resume</label>
+                    <label><input type="radio" name="q7" value="c"> Memo</label>
+                    <label><input type="radio" name="q7" value="d">  Calendar
+                    </label>
+                </div>
+                <p>8.What is the study of how individuals and societies allocate resources and make choices to satisfy unlimited wants with limited resources?
+                </p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> Biology
+                    </label>
+                    <label><input type="radio" name="q8" value="b"> Economics
+                    </label>
+                    <label><input type="radio" name="q8" value="c">Sociology
+                    </label>
+                    <label><input type="radio" name="q8" value="d">  Psychology
+                    </label>
+                </div>
+                <p>9.Which term refers to the total amount of money a business receives from selling goods or services?
+ 
+                </p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a"> Profit</label>
+                    <label><input type="radio" name="q9" value="b">Revenue
+                    </label>
+                    <label><input type="radio" name="q9" value="c">  Debt
+                    </label>
+                    <label><input type="radio" name="q9" value="d"> Investment
+                    </label>
+                </div>
+                <p>10. What is the term for money owed by a business to its suppliers or creditors?</p>
+
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> Assets
+                    </label>
+                    <label><input type="radio" name="q10" value="b"> Liabilities
+                    </label>
+                    <label><input type="radio" name="q10" value="c">Equity
+                    </label>
+                    <label><input type="radio" name="q10" value="d"> Revenue
+                    </label>
+                </div>
+                <p>11.Which branch of engineering deals with the design and construction of structures such as bridges and buildings?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q11" value="a"> Mechanical Engineering
+                    </label>
+                    <label><input type="radio" name="q11" value="b"> Civil Engineering
+                    </label>
+                    <label><input type="radio" name="q11" value="c">Electrical Engineering
+                    </label>
+                    <label><input type="radio" name="q11" value="d">Aerospace Engineering
+                    </label>
+                </div>
+                <p>12.What is the process of converting raw materials, components, or parts into finished goods that meet a customer's expectations called?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q12" value="a">Manufacturing
+                    </label>
+                    <label><input type="radio" name="q12" value="b">Design
+                    </label>
+                    <label><input type="radio" name="q12" value="c">Quality control
+                    </label>
+                    <label><input type="radio" name="q12" value="d">Prototyping
+                    </label>
+                </div>
+                <p>13.Which engineering discipline focuses on the design and operation of machinery, engines, and mechanical systems?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q13" value="a">Civil Engineering
+                    </label>
+                    <label><input type="radio" name="q13" value="b">Electrical Engineering
+                    </label>
+                    <label><input type="radio" name="q13" value="c"> Mechanical Engineering
+                    </label>
+                    <label><input type="radio" name="q13" value="d">  Chemical Engineering
+                    </label>
+                </div>
+                <p>14.What is the term for the branch of engineering that deals with the design and construction of aircraft and spacecraft?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q14" value="a">Aerospace Engineering
+                    </label>
+                    <label><input type="radio" name="q14" value="b">Environmental Engineering
+                    </label>
+                    <label><input type="radio" name="q14" value="c"> Biomedical Engineering
+                    </label>
+                    <label><input type="radio" name="q14" value="d"> Industrial Engineering
+                    </label>
+                </div>
+                <p>15. Which engineering field involves the study and application of electricity, electronics, and electromagnetism?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q15" value="a"> Civil Engineering
+                    </label>
+                    <label><input type="radio" name="q15" value="b">Electrical Engineering
+                    </label>
+                    <label><input type="radio" name="q15" value="c">Chemical Engineering
+                    </label>
+                    <label><input type="radio" name="q15" value="d"> Computer Engineering
+                    </label>
+                </div>
+                <p>16.What is the primary role of a nurse in patient care?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q16" value="a"> Diagnosing medical conditions
+                    </label>
+                    <label><input type="radio" name="q16" value="b">Prescribing medication </label>
+                    <label><input type="radio" name="q16" value="c">Providing direct care and support to patients
+                    </label>
+                    <label><input type="radio" name="q16" value="d">Performing surgeries
+                    </label>
+                </div>
+                <p>17.Which nursing specialty focuses on providing care to individuals across the lifespan, from newborns to the elderly?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q17" value="a"> Pediatric nursing
+                    </label>
+                    <label><input type="radio" name="q17" value="b">Geriatric nursing
+                    </label>
+                    <label><input type="radio" name="q17" value="c">Obstetric nursing
+                    </label>
+                    <label><input type="radio" name="q17" value="d">  Family nursing
+
+                    </label>
+                </div>
+                <p>18.What is the term for the process of assessing a patient's health status, analyzing the data, and creating a plan of care?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q18" value="a"> Diagnosis
+                    </label>
+                    <label><input type="radio" name="q18" value="b"> Implementation
+                    </label>
+                    <label><input type="radio" name="q18" value="c">Assessment
+                    </label>
+                    <label><input type="radio" name="q18" value="d">Evaluation
+                    </label>
+                </div>
+                <p>19.Which nursing intervention involves administering medication, providing wound care, and assisting with activities of daily living?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q19" value="a"> Evaluation
+                    </label>
+                    <label><input type="radio" name="q19" value="b"> Assessment
+                    </label>
+                    <label><input type="radio" name="q19" value="c">Implementation
+                    </label>
+                    <label><input type="radio" name="q19" value="d"> Diagnosis
+                    </label>
+                </div>
+                <p>20.Which nursing role focuses on educating patients and their families about health promotion, disease prevention, and self-care management?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q20" value="a">Case manager
+                    </label>
+                    <label><input type="radio" name="q20" value="b">Clinical nurse specialist
+                    </label>
+                    <label><input type="radio" name="q20" value="c">Nurse educator
+                    </label>
+                    <label><input type="radio" name="q20" value="d"> Nurse researcher</label>
+                </div>
+                <p>21. What is the primary purpose of a front desk in a hotel?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q21" value="a"> To handle housekeeping duties
+                    </label>
+                    <label><input type="radio" name="q21" value="b">To manage guest check-ins and check-outs
+                    </label>
+                    <label><input type="radio" name="q21" value="c"> To oversee kitchen operations
+
+                    </label>
+                    <label><input type="radio" name="q21" value="d"> To provide entertainment services to guests
+                    </label>
+                </div>
+                <p>22.Which department is responsible for ensuring cleanliness and maintenance of guest rooms?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q22" value="a">Front office
+                    </label>
+                    <label><input type="radio" name="q22" value="b">Housekeeping
+                     </label>
+                    <label><input type="radio" name="q22" value="c">Food and beverage
+                    </label>
+                    <label><input type="radio" name="q22" value="d"> Marketing and sales
+                    </label>
+                </div>
+                <p>23. What is the main function of a concierge in a hotel?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q23" value="a"> Handling reservations
+                    </label>
+                    <label><input type="radio" name="q23" value="b"> Preparing guest bills
+                    </label>
+                    <label><input type="radio" name="q23" value="c">Assisting guests with various services and information
+                    </label>
+                    <label><input type="radio" name="q23" value="d">Managing the hotel's finances
+                    </label>
+                </div>
+                <p>24. What is the primary objective of revenue management in a hotel?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q24" value="a">Maximizing profits by selling rooms at high prices
+                    </label>
+                    <label><input type="radio" name="q24" value="b"> Offering discounts to attract more guests
+                    </label>
+                    <label><input type="radio" name="q24" value="c">Providing free upgrades to loyal customers
+                    </label>
+                    <label><input type="radio" name="q24" value="d"> Minimizing expenses by reducing staff
+                    </label>
+                </div>
+                <p>25.Which department is responsible for planning and executing events such as weddings, conferences, and parties?
+                </p>
+
+                <div class="options">
+                    <label><input type="radio" name="q25" value="a">Front office
+                    </label>
+                    <label><input type="radio" name="q25" value="b"> Housekeeping
+                    </label>
+                    <label><input type="radio" name="q25" value="c">Banquet and catering
+                    </label>
+                    <label><input type="radio" name="q25" value="d"> Human resources</label>
+                </div>
+              
+              
+            </div>
+            <!-- Add more questions here -->
+            <button type="submit" class="btn"><a href="cong.html"style="color:white;">Submit Test</a></button>
+        </form>
+    </div>
+    <script>
+        const time = document.getElementById('time');
+        let seconds = 600;
+        const timer = setInterval(() => {
+            seconds--;
+            time.textContent = seconds;
+            if (seconds === 0) {
+                clearInterval(timer);
+                alert('Time is up!');
+                document.getElementById('testForm').submit();
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

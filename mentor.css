@@ -1,0 +1,88 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	
+background-image: url(b6.jpg);
+background-repeat: no-repeat;
+background-size: cover ;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.profile-card {
+	background-color: #042c61;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+	padding: 10px;
+	width: 30%;
+	height: 300px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.profile-picture {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 5px;
+	filter: brightness(70%);
+}
+.profile-info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	padding: 10px;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.name-email {
+	margin-bottom:0;
+    margin-top: 0;
+    
+}
+h1 {
+    color: rgb(113, 188, 250);
+	margin-top: 10px;
+    margin-bottom: 0px;
+}
+p {
+	margin-bottom: 0;
+}
+h3{
+    color: rgb(255, 237, 158);
+}
+
+/* 
+.back-video{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+
+@media(min-aspect-ratio : 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+
+}
+@media(max-aspect-ratio : 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+
+} */

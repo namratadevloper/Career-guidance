@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get in Touch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('WhatsApp Image 2024-03-06 at 15.57.35_24fd76ee.jpg'); /* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+            padding: 2rem;
+            min-height: 100vh; /* Ensure main takes up full viewport height */
+        }
+        form {
+            flex-basis: 100%; /* Take full width of parent (main) */
+            max-width: 400px; /* Limit form width */
+            text-align: center;
+            padding: 0 1rem; /* Add padding to the sides */
+            margin: 0 auto; /* Center horizontally */
+        }
+        form label, form input {
+            display: block;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        form input, form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form textarea {
+            resize: vertical;
+        }
+        form input[type="button"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 100px;
+            border-radius: 5px;
+			width: 400px;
+			margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+        form input[type="button"]:hover {
+            background-color: #555;
+        }
+        aside {
+            flex-basis: 48%;
+            margin-left: 2%;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        aside p {
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    </style>
+	
+</head>
+<body>
+    <style>
+        
+          
+        
+      </style>
+	<header>
+		<h1>Get in Touch</h1>
+	</header>
+	<main>
+        <script>
+            function popup() {
+              alert("Your issue solve as soon as possible THANK YOU");
+              // Redirect to home page after a few seconds
+              setTimeout(function() {
+                window.location.href = "homepage.php";
+              }, 2000);
+            }
+          </script>
+    <form action="#" method="POST">
+        
+		<form action="#" method="POST">
+			<label for="name">Enter your Name</label>
+            <input type="text" id="name" name="customer" required>
+			<label for="email">Enter a valid email address</label>
+			<input type="email" id="email" name="email" required>
+			<label for="message">How can we help?</label>
+			<textarea id="message" name="info" required></textarea>
+            <a href="homepage.html" ><input type="button" onclick="popup()" value="SUBMIT"></a>
+		</form>
+    </form>
+        <aside>
+        <p>Email id : career.catalyst111@gmail.com</p>
+        <p>Mobile No: 123-456-789-0</p>
+    </aside>
+	</main>
+	<footer>
+		<p>Thank you!</p>
+	</footer>
+</body>
+</html>
